@@ -1,0 +1,133 @@
+/* GLACIAL FONTS */
+@font-face {
+	font-family: glacialBold;
+	src: url(../fonts/glacial/gi-bold.otf);
+}
+
+@font-face {
+	font-family: glacialItalic;
+	src: url(../fonts/glacial/gi-italic.otf);
+}
+
+@font-face {
+	font-family: glacialReg;
+	src: url(../fonts/glacial/gi-reg.otf);
+}
+
+/* SHRIKHAND FONTS */
+@font-face {
+	font-family: shrik;
+	src: url(../fonts/shrikhand/shrik-reg.ttf);
+}
+
+/* TEXT ELEMENTS */
+
+* {
+	margin: 0;
+}
+
+body {
+	background-color: #F1F5F1;
+	color: #658C94;
+	flex-direction: column;
+}
+
+a {
+	text-decoration-line: none;
+	text-decoration: none;
+	text-decoration-style: none;
+}
+
+#logo {
+	width: 10vw;
+	padding: 1rem 2rem 0 2rem;
+	float: left;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+
+	font-family: shrik;
+	padding-top: 3vw;
+	float: left;
+	text-align: center;
+	color: white;
+	animation-name: fadeInTop;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+nav a {
+	padding: 2vw;
+	font-size: 1.5vw;
+	color: #658C94;
+	transition: 1s;
+}
+
+nav a:hover {
+	text-decoration-line: overline;
+	color: #3D585D;
+}
+
+.active {
+	text-decoration-line: overline;
+}
+
+@keyframes fadeInTop {
+	0% {
+		transform: translateY(-70px);
+	}
+
+	30% {
+		transform: translateY(-70px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* MAIN */
+
+.container {
+	width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -100px;
+}
+
+.shell {
+	background: url("../img/closeShell.png") no-repeat center;
+    height: 319px;
+    width: 206px;
+    display: inline-block;
+}
+
+.shell:hover {
+	background: url("../img/openShell.png") no-repeat center;
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
