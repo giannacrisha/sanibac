@@ -190,6 +190,12 @@ nav a:hover {
 		 transform: rotate(360deg);
 	}
 }
+
+
+.loaderDIV {
+	background-color: #658C94;
+}
+
  .circle-loader {
 	 position: absolute;
 	 left: 50%;
@@ -198,6 +204,7 @@ nav a:hover {
 	 height: 8em;
 	 margin-left: -4em;
 	 margin-top: -4em;
+
 }
  .circle {
 	 position: absolute;
