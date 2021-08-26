@@ -20,6 +20,13 @@
 	src: url(../fonts/shrikhand/shrik-reg.ttf);
 }
 
+/* ARTICULAT FONTS */
+
+@font-face {
+	font-family: articulatMed;
+	src: url(../fonts/articulat/ArticulatCF-Medium.otf);
+}
+
 /* TEXT ELEMENTS */
 
 * {
@@ -88,13 +95,68 @@ nav a:hover {
 	}
 }
 
+/* DIVS */
+
+.parentDIV {
+	display: flex;
+	flex-direction: column;
+}
+
+.containerDIV {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.mainDIV {
+	width: 70%;
+}
+
+.sideDIV {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 30%;
+	background-color: #47676B;
+	color: #F1F5F1;
+	padding: 5rem;
+}
+
+@media only screen and (max-width: 1080px) {
+.containerDIV {
+	display: block;
+	flex-direction: column;
+}
+
+.mainDIV {
+	width: 100%;
+}
+
+.sideDIV {
+	width: auto;
+	height: auto;
+}
+}
+
+/* SIDE DIV */
+
+.sideDIV h1 {
+	font-family: glacialReg;
+	font-size: 5rem;
+}
+
+.sideDIV h2 {
+	font-family: articulatMed;
+	font-size: 1.5rem;
+}
 /* MAIN */
 
 #hand {
-	width: 50%;
-	transform: translateX(-13rem);
+	width: 80%;
 	animation-name: handIn;
 	animation-duration: 3s;
+	float: left;
 }
 
 @keyframes handIn {
