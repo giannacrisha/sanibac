@@ -27,6 +27,11 @@
 	src: url(../fonts/articulat/ArticulatCF-Medium.otf);
 }
 
+@font-face {
+	font-family: articulatNormal;
+	src: url(../fonts/articulat/ArticulatCF-Normal.otf);
+}
+
 /* TEXT ELEMENTS */
 
 * {
@@ -150,6 +155,10 @@ nav a:hover {
 	font-family: articulatMed;
 	font-size: 1.5rem;
 }
+.sideDIV h3 {
+	font-family: articulatNormal;
+	font-size: 1rem;
+}
 /* MAIN */
 
 #hand {
@@ -165,10 +174,53 @@ nav a:hover {
 	}
 }
 
+/* LOADER */
 
-
-
-
+@keyframes rotate-animation {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(360deg);
+	}
+}
+ .circle-loader {
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 width: 8em;
+	 height: 8em;
+	 margin-left: -4em;
+	 margin-top: -4em;
+}
+ .circle {
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 margin-left: -0.25em;
+	 transform-origin: 0.25em 4em;
+	 animation: rotate-animation 2.5s infinite;
+	 width: 1em;
+	 height: 1em;
+	 border-radius: 0.25em;
+	 background-color: #cfc;
+	 box-shadow: 0 0 0.5em rgba(255, 255, 255, .5);
+}
+ .circle-0 {
+	 animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+ .circle-1 {
+	 animation-timing-function: cubic-bezier(0.1625, 0, 0.8375, 1);
+}
+ .circle-2 {
+	 animation-timing-function: cubic-bezier(0.325, 0, 0.675, 1);
+}
+ .circle-3 {
+	 animation-timing-function: cubic-bezier(0.4875, 0, 0.5125, 1);
+}
+ .circle-4 {
+	 animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
 
 
 
