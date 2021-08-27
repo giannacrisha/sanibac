@@ -68,10 +68,11 @@ nav {
 	animation-name: fadeInTop;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
+	overflow: scroll;
 }
 
 nav a {
-	padding: 2rem;
+	padding: 1rem 1.5rem 1rem 1.5rem;
 	font-size: 1.5rem;
 	color: #658C94;
 	transition: 1s;
@@ -79,7 +80,7 @@ nav a {
 
 nav a:hover {
 	text-decoration-line: overline;
-	color: #3D585D;
+	color: #CDC785;
 }
 
 .active {
@@ -142,6 +143,10 @@ nav a:hover {
 	width: auto;
 	height: auto;
 }
+
+nav {
+	justify-content: center;
+}
 }
 
 /* SIDE DIV */
@@ -195,7 +200,7 @@ nav a:hover {
 .loaderDIV {
 	width: 100%;
 	height: 100%;
-	background-color: #658C94;
+	background-color: #3D585D;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -220,7 +225,7 @@ nav a:hover {
 	 animation: rotate-animation 2.5s infinite;
 	 width: 1em;
 	 height: 1em;
-	 border-radius: 0.25em;
+	 border-radius: 50px;
 	 background-color: #EDE8AB;
 	 box-shadow: 0 0 0.5em rgba(255, 255, 255, .5);
 }
