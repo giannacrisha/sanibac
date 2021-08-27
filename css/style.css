@@ -71,8 +71,8 @@ nav {
 }
 
 nav a {
-	padding: 2vw;
-	font-size: 1.5vw;
+	padding: 2rem;
+	font-size: 1.5rem;
 	color: #658C94;
 	transition: 1s;
 }
@@ -88,11 +88,11 @@ nav a:hover {
 
 @keyframes fadeInTop {
 	0% {
-		transform: translateY(-70px);
+		transform: translateY(-75px);
 	}
 
 	30% {
-		transform: translateY(-70px);
+		transform: translateY(-75px);
 	}
 
 	100% {
