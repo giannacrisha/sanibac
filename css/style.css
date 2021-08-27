@@ -69,6 +69,9 @@ nav {
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	overflow: scroll;
+	animation-delay: 2s;
+	transform: translateY(-75px);
+	animation-fill-mode: forwards;
 }
 
 nav a {
@@ -170,12 +173,19 @@ nav {
 	width: 80%;
 	animation-name: handIn;
 	animation-duration: 3s;
+	animation-delay: 2s;
+	transform: translateX(-60rem);
 	float: left;
+	animation-fill-mode:forwards;
 }
 
 @keyframes handIn {
 	0% {
 		transform: translateX(-60rem);
+	}
+
+	100% {
+		transform: translateX(0px);
 	}
 }
 
